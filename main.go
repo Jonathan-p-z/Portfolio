@@ -1,12 +1,21 @@
 package main
 
 import (
-	"net/http"
+    "log"
+    "net/http"
+    "portfolio/internal/handlers"
 )
 
 func main() {
-	fs := http.FileServer(http.Dir("./public"))
-	http.Handle("/", fs)
+    // Fichiers statiques
+    fs := http.FileServer(http.Dir("./assets"))
+    http.Handle("/assets/", http.StripPrefix("/assets/", fs))
 
-	http.ListenAndServe("localhost:8000", nil)
+    // Routes
+    http.HandleFunc("/", handlers.Index)
+    http.HandleFunc("/about", handlers.About)
+    http.HandleFunc("/projects", handlers.Projects)
+
+    log.Println("Serveur démarré sur http://localhost:8080")
+    log.Fatal(http.ListenAndServe(":8080", nil))
 }
