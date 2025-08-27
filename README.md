@@ -27,9 +27,9 @@ Ce portfolio est conçu pour être **dynamique et interactif**, incluant :
 
 ## 🧩 Technologies utilisées
 
-- **HTML5** : Structure sémantique et accessible  
-- **CSS3** : Flexbox, Grid et animations pour un design moderne  
-- **JavaScript (ES6+)** : Dynamisme et interactions utilisateur  
+- **HTML** : Structure sémantique et accessible  
+- **CSS** : Flexbox, Grid et animations pour un design moderne  
+- **JavaScript ** : Dynamisme et interactions utilisateur  
 - **Git & GitHub Pages** : Hébergement et gestion de versions  
 
 ---
