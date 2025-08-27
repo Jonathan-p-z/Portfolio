@@ -10,6 +10,7 @@ Découvrez mes projets, compétences et réalisations à travers un site moderne
 
 Le portfolio est hébergé ici :  
 [https://jonathan-p-z.github.io/Portfolio](https://jonathan-p-z.github.io/Portfolio)
+[https://jonathan-p-z.github.io/Portfolio/about](https://jonathan-p-z.github.io/Portfolio/about)
 
 ---
 
