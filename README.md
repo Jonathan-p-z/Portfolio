@@ -29,7 +29,7 @@ Ce portfolio est conçu pour être **dynamique et interactif**, incluant :
 
 - **HTML** : Structure sémantique et accessible  
 - **CSS** : Flexbox, Grid et animations pour un design moderne  
-- **JavaScript ** : Dynamisme et interactions utilisateur  
+- **JavaScript** : Dynamisme et interactions utilisateur  
 - **Git & GitHub Pages** : Hébergement et gestion de versions  
 
 ---
