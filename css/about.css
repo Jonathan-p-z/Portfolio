@@ -72,21 +72,21 @@ body {
 }
 
 .bg-primary {
-    background-color: #1f1f1f !important;
+    background-color: #1f1f1f;
 }
 
 .bg-secondary {
-    background-color: #2c2c2c !important;
+    background-color: #2c2c2c;
 }
 
 .text-uppercase {
-    text-transform: uppercase !important;
+    text-transform: uppercase;
 }
 
 .text-white {
-    color: #e0e0e0 !important;
+    color: #e0e0e0;
 }
 
 .text-center {
-    text-align: center !important;
+    text-align: center;
 }
