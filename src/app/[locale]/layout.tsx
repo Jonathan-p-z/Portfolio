@@ -57,7 +57,6 @@ export default async function LocaleLayout({ children, params }: Props) {
           </main>
           <footer className="border-t border-terminal-border py-6 px-6">
             <p className="font-mono text-xs text-terminal-muted text-center">
-              {/* Footer text is static — same in FR and EN */}
               © 2026 Jonathan Perez — yaiito.fr
             </p>
           </footer>
