@@ -1,0 +1,81 @@
+{
+  "metadata": {
+    "title": "Portfolio – Yaiito",
+    "description": "My personal portfolio"
+  },
+  "nav": {
+    "about":    "About",
+    "skills":   "Skills",
+    "projects": "Projects",
+    "ctf":      "CTF",
+    "contact":  "Contact"
+  },
+  "hero": {
+    "line0": "> Yaiito ~ Jonathan Perez",
+    "line1": "> Cybersecurity Student — Ynov Campus Aix-en-Provence",
+    "line2": "> Looking for a SOC / Security Analyst apprenticeship — September 2026",
+    "line3": "> Aix-Marseille-Provence",
+    "cta_contact": "Contact",
+    "cta_github":  "GitHub"
+  },
+  "skills": {
+    "title":     "$ skills --list",
+    "defensive": "Defensive / Blue Team",
+    "offensive": "Offensive / Red Team"
+  },
+  "projects": {
+    "title":      "$ projects --list",
+    "status_wip": "In progress",
+    "github":     "GitHub",
+    "private":    "Private repo",
+    "bastion": {
+      "name":        "Bastion",
+      "description": "Discord security bot in Go — SaaS with web dashboard, risk engine, alt-account detection, ticket system"
+    },
+    "orbis": {
+      "name":        "Orbis",
+      "description": "Unix shell written in Rust — Cargo workspace with ~40 utilities, hand-rolled AST, job control, REPL with autocompletion"
+    },
+    "dropin": {
+      "name":        "Drop'In",
+      "description": "Civic-tech mobile app for waste management — collaborative map, AI scanner, B2B dashboard for local authorities"
+    }
+  },
+  "terminal": {
+    "section_title": "$ projects --list",
+    "hint":          "type 'help' to get started",
+    "help_title":    "Available commands:",
+    "help_help":     "show this help",
+    "help_ls":       "list current directory",
+    "help_cd":       "enter a project folder",
+    "help_cdup":     "go back to parent directory",
+    "help_cat":      "show project README",
+    "help_clear":    "clear the terminal",
+    "cmd_not_found": "command not found",
+    "no_such_dir":   "no such directory",
+    "no_such_file":  "no such file",
+    "no_readme_here":"enter a project first (e.g. cd bastion)",
+    "readme_bastion": "# Bastion\n\nDiscord security bot in Go — SaaS with web dashboard,\nrisk engine, alt-account detection, ticket system.\n\nStack   :  Go · PostgreSQL · Docker · Discord API · OAuth2\nStatus  :  In progress\nGitHub  :  https://github.com/Jonathan-p-z/Bastion",
+    "readme_orbis":   "# Orbis\n\nUnix shell written in Rust — Cargo workspace with ~40 utilities,\nhand-rolled AST, job control, REPL with autocompletion.\n\nStack   :  Rust · Cargo\nStatus  :  In progress\nGitHub  :  https://github.com/Jonathan-p-z/Orbis",
+    "readme_dropin":   "# Drop'In\n\nCivic-tech mobile app for waste management —\ncollaborative map, AI scanner, B2B dashboard for local authorities.\n\nStack   :  Flutter · Rust · Axum · PostGIS\nStatus  :  In progress\nGitHub  :  https://github.com/Jonathan-p-z/Drop-In",
+    "readme_keyvault": "# KeyVault\n\nEncrypted password manager written in Python —\nAES-GCM, Argon2id, automatic format migration,\nGUI + CLI, anti-strings, mirror backup.\n\nStack   :  Python · Argon2id · AES-GCM · PyInstaller\nStatus  :  Completed\nGitHub  :  https://github.com/Jonathan-p-z/keyvault",
+    "readme_valorant": "# Valorant Tracker\n\nValorant tracker in Go — agents, weapons, maps via\nthe official API, search & filters, favorites system.\n\nStack   :  Go · HTML · CSS · JavaScript\nStatus  :  Completed\nGitHub  :  https://github.com/Jonathan-p-z/api_valorant"
+  },
+  "ctf": {
+    "title":         "$ ctf --stats",
+    "profile":       "Profile →",
+    "writeups_title":"$ cat writeups/",
+    "coming_soon":   "// write-ups coming soon"
+  },
+  "about": {
+    "title": "$ whoami",
+    "body":  "Cybersecurity Bachelor student at Ynov Campus Aix-en-Provence, specializing in SOC analysis and defensive security, with a strong offensive background through CTF competitions and pentesting. I maintain a Proxmox homelab with self-hosted services, and build open-source projects in Go and Rust to sharpen my technical skills. Looking for a SOC / Security Analyst apprenticeship starting September 2026 in the Aix-Marseille-Provence area."
+  },
+  "contact": {
+    "title":       "$ contact --info",
+    "download_cv": "$ download cv.pdf"
+  },
+  "footer": {
+    "copy": "© 2026 Jonathan Perez — yaiito.fr"
+  }
+}

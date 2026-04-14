@@ -1,0 +1,81 @@
+{
+  "metadata": {
+    "title": "Portfolio – Yaiito",
+    "description": "Mon portfolio personnel"
+  },
+  "nav": {
+    "about":    "À propos",
+    "skills":   "Compétences",
+    "projects": "Projets",
+    "ctf":      "CTF",
+    "contact":  "Contact"
+  },
+  "hero": {
+    "line0": "> Yaiito ~ Jonathan Perez",
+    "line1": "> Étudiant Cybersécurité — Ynov Campus Aix-en-Provence",
+    "line2": "> Recherche alternance SOC / Analyste Sécurité — Septembre 2026",
+    "line3": "> Aix-Marseille-Provence",
+    "cta_contact": "Contact",
+    "cta_github":  "GitHub"
+  },
+  "skills": {
+    "title":     "$ skills --list",
+    "defensive": "Défensif / Blue Team",
+    "offensive": "Offensif / Red Team"
+  },
+  "projects": {
+    "title":      "$ projects --list",
+    "status_wip": "En cours",
+    "github":     "GitHub",
+    "private":    "Dépôt privé",
+    "bastion": {
+      "name":        "Bastion",
+      "description": "Bot de sécurité Discord en Go — SaaS avec dashboard web, moteur de risque, détection de comptes alternatifs, système de tickets"
+    },
+    "orbis": {
+      "name":        "Orbis",
+      "description": "Shell Unix écrit en Rust — workspace Cargo avec ~40 utilitaires, AST hand-rolled, gestion des jobs, REPL avec autocomplétion"
+    },
+    "dropin": {
+      "name":        "Drop'In",
+      "description": "Application mobile civic-tech de gestion des déchets — carte collaborative, scanner IA, dashboard B2B pour collectivités"
+    }
+  },
+  "terminal": {
+    "section_title": "$ projects --list",
+    "hint":          "tape 'help' pour commencer",
+    "help_title":    "Commandes disponibles :",
+    "help_help":     "affiche cette aide",
+    "help_ls":       "liste le répertoire courant",
+    "help_cd":       "entre dans un dossier projet",
+    "help_cdup":     "remonte au répertoire parent",
+    "help_cat":      "affiche le README du projet",
+    "help_clear":    "vide le terminal",
+    "cmd_not_found": "commande introuvable",
+    "no_such_dir":   "dossier introuvable",
+    "no_such_file":  "fichier introuvable",
+    "no_readme_here":"entre dans un projet d'abord (ex: cd bastion)",
+    "readme_bastion": "# Bastion\n\nBot de sécurité Discord en Go — SaaS avec dashboard web,\nmoteur de risque, détection de comptes alternatifs, système de tickets.\n\nStack   :  Go · PostgreSQL · Docker · Discord API · OAuth2\nStatut  :  En cours\nGitHub  :  https://github.com/Jonathan-p-z/Bastion",
+    "readme_orbis":   "# Orbis\n\nShell Unix écrit en Rust — workspace Cargo avec ~40 utilitaires,\nAST hand-rolled, gestion des jobs, REPL avec autocomplétion.\n\nStack   :  Rust · Cargo\nStatut  :  En cours\nGitHub  :  https://github.com/Jonathan-p-z/Orbis",
+    "readme_dropin":   "# Drop'In\n\nApplication mobile civic-tech de gestion des déchets —\ncarte collaborative, scanner IA, dashboard B2B pour collectivités.\n\nStack   :  Flutter · Rust · Axum · PostGIS\nStatut  :  En cours\nGitHub  :  https://github.com/Jonathan-p-z/Drop-In",
+    "readme_keyvault": "# KeyVault\n\nGestionnaire de mots de passe chiffré en Python —\nAES-GCM, Argon2id, migration automatique de formats,\nGUI + CLI, anti-strings, backup miroir.\n\nStack   :  Python · Argon2id · AES-GCM · PyInstaller\nStatut  :  Terminé\nGitHub  :  https://github.com/Jonathan-p-z/keyvault",
+    "readme_valorant": "# Valorant Tracker\n\nTracker Valorant en Go — agents, armes, cartes via\nl'API officielle, recherche et filtres, système de favoris.\n\nStack   :  Go · HTML · CSS · JavaScript\nStatut  :  Terminé\nGitHub  :  https://github.com/Jonathan-p-z/api_valorant"
+  },
+  "ctf": {
+    "title":         "$ ctf --stats",
+    "profile":       "Profil →",
+    "writeups_title":"$ cat writeups/",
+    "coming_soon":   "// write-ups à venir"
+  },
+  "about": {
+    "title": "$ whoami",
+    "body":  "Étudiant en Bachelor Cybersécurité à Ynov Campus Aix-en-Provence, je me spécialise dans l'analyse SOC et la sécurité défensive, tout en cultivant une solide culture offensive via les CTF et le pentest. Je maintiens un homelab Proxmox avec des services auto-hébergés, et je développe des projets open-source en Go et Rust pour approfondir mes compétences techniques. Je recherche une alternance SOC / Analyste Sécurité à partir de septembre 2026 dans la région Aix-Marseille-Provence."
+  },
+  "contact": {
+    "title":       "$ contact --info",
+    "download_cv": "$ download cv.pdf"
+  },
+  "footer": {
+    "copy": "© 2026 Jonathan Perez — yaiito.fr"
+  }
+}
