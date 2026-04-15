@@ -75,6 +75,18 @@
     "title":       "$ contact --info",
     "download_cv": "$ download cv.pdf"
   },
+  "tools": {
+    "title":            "$ tools --demo",
+    "loading":          "chargement du module wasm...",
+    "tab_logs":         "log_analyzer",
+    "tab_ioc":          "ioc_extractor",
+    "btn_analyze":      "$ analyser",
+    "btn_extract":      "$ extraire",
+    "placeholder_logs": "192.168.1.1 - - [10/Oct/2000:13:55:36 -0700] \"GET /index.html HTTP/1.1\" 200 1234\n10.0.0.5 - - [10/Oct/2000:13:56:01 -0700] \"POST /admin HTTP/1.1\" 401 890\nFailed password for root from 45.33.32.156 port 22 ssh2",
+    "placeholder_ioc":  "Un malware a contacté 192.168.1.100 et evil.com\nHash : d41d8cd98f00b204e9800998ecf8427e\nExploitation de CVE-2021-44228 détectée\nContact : attacker@evil.com",
+    "no_input":         "aucune entrée fournie",
+    "error_prefix":     "erreur :"
+  },
   "footer": {
     "copy": "© 2026 Jonathan Perez — yaiito.fr"
   }

@@ -4,6 +4,7 @@ import Hero             from '@/components/sections/Hero';
 import Skills           from '@/components/sections/Skills';
 import TerminalProjects from '@/components/sections/TerminalProjects';
 import CTF              from '@/components/sections/CTF';
+import Tools            from '@/components/sections/Tools';
 import About            from '@/components/sections/About';
 import Contact          from '@/components/sections/Contact';
 
@@ -25,6 +26,7 @@ export default async function HomePage({ params }: Props) {
       <Skills />
       <TerminalProjects />
       <CTF />
+      <Tools />
       <About />
       <Contact />
     </>
