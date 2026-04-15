@@ -15,11 +15,6 @@ const PLATFORMS = [
   },
 ] as const;
 
-const WRITEUP_PLACEHOLDERS = [
-  'bastion-web-sqli.md',
-  'thm-advent-of-cyber-2024.md',
-  'htb-machine-analysis.md',
-] as const;
 
 function PlatformCard({ name, url, label }: { name: string; url: string; label: string }) {
   return (
@@ -71,7 +66,7 @@ export default function CTF() {
         {t('title')}
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-12">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
         {PLATFORMS.map((p) => (
           <PlatformCard
             key={p.name}
@@ -80,23 +75,6 @@ export default function CTF() {
             label={t('profile')}
           />
         ))}
-      </div>
-
-      <div className="border border-terminal-border rounded-sm">
-        <div className="px-4 py-2 border-b border-terminal-border bg-terminal-surface/60">
-          <span className="font-mono text-sm text-terminal-accent">
-            {t('writeups_title')}
-          </span>
-        </div>
-        <ul className="p-4 space-y-2">
-          {WRITEUP_PLACEHOLDERS.map((name) => (
-            <li key={name} className="flex items-center gap-3 font-mono text-sm">
-              <span className="text-terminal-border">—</span>
-              <span className="text-terminal-muted line-through opacity-40">{name}</span>
-              <span className="text-terminal-muted/60 text-xs">{t('coming_soon')}</span>
-            </li>
-          ))}
-        </ul>
       </div>
     </section>
   );

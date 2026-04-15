@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { JetBrains_Mono, Inter } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages, getTranslations } from 'next-intl/server';
+import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import Navbar from '@/components/Navbar';
@@ -44,6 +44,8 @@ export default async function LocaleLayout({ children, params }: Props) {
   if (!routing.locales.includes(locale as 'fr' | 'en')) {
     notFound();
   }
+
+  setRequestLocale(locale);
 
   const messages = await getMessages();
 
