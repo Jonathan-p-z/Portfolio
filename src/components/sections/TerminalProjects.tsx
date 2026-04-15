@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { useCallback, useEffect, useRef, useState } from 'react';
+import SectionTitle from '@/components/SectionTitle';
 
 const PROJECTS = ['bastion', 'orbis', 'dropin', 'keyvault', 'valorant'] as const;
 type ProjectSlug = (typeof PROJECTS)[number];
@@ -151,9 +152,10 @@ export default function TerminalProjects() {
       id="projects"
       className="scroll-mt-16 px-6 py-20 max-w-5xl mx-auto w-full"
     >
-      <h2 className="font-mono text-terminal-accent mb-6 text-base">
-        {t('section_title')}
-      </h2>
+      <SectionTitle
+        text={t('section_title')}
+        className="font-mono text-terminal-accent mb-6 text-base"
+      />
 
       <div
         className="border border-terminal-border rounded-sm cursor-text select-none"
