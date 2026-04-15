@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { useEffect, useRef, useState } from 'react';
+import { motion } from 'framer-motion';
 
 const TYPING_SPEED = 42; // ms per character
 const LINE_PAUSE = 380; // ms between lines
@@ -17,6 +18,23 @@ function TerminalLine({ text }: { text: string }) {
     );
   }
   return <span className="text-terminal-text">{text}</span>;
+}
+
+function GlitchText({ children }: { children: React.ReactNode }) {
+  return (
+    <motion.span
+      className="inline-block"
+      animate={{ x: [0, -1.5, 1.5, -1, 0.5, 0] }}
+      transition={{
+        duration: 0.1,
+        ease: 'linear',
+        repeat: Infinity,
+        repeatDelay: 3.9,
+      }}
+    >
+      {children}
+    </motion.span>
+  );
 }
 
 export default function Hero() {
@@ -73,7 +91,13 @@ export default function Hero() {
         <div className="font-mono text-sm sm:text-base leading-loose space-y-1">
           {completedLines.map((line, i) => (
             <p key={i}>
-              <TerminalLine text={line} />
+              {i === 0 ? (
+                <GlitchText>
+                  <TerminalLine text={line} />
+                </GlitchText>
+              ) : (
+                <TerminalLine text={line} />
+              )}
             </p>
           ))}
 

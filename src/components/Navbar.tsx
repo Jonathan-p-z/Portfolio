@@ -1,6 +1,9 @@
+'use client';
+
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import LanguageSwitcher from './LanguageSwitcher';
+import { motion, useScroll, useTransform, useMotionTemplate } from 'framer-motion';
 
 const NAV_LINKS = [
   { href: '#about',    key: 'about'    },
@@ -12,9 +15,15 @@ const NAV_LINKS = [
 
 export default function Navbar() {
   const t = useTranslations('nav');
+  const { scrollY } = useScroll();
+  const bgOpacity = useTransform(scrollY, [0, 80], [0, 0.95]);
+  const backgroundColor = useMotionTemplate`rgba(13,17,23,${bgOpacity})`;
 
   return (
-    <header className="fixed top-0 inset-x-0 z-50 bg-terminal-bg border-b border-terminal-border">
+    <motion.header
+      style={{ backgroundColor }}
+      className="fixed top-0 inset-x-0 z-50 border-b border-terminal-border backdrop-blur-sm"
+    >
       <nav className="mx-auto flex max-w-5xl items-center justify-between gap-6 px-6 h-14">
 
         {/* Logo */}
@@ -47,6 +56,6 @@ export default function Navbar() {
         <LanguageSwitcher />
 
       </nav>
-    </header>
+    </motion.header>
   );
 }
