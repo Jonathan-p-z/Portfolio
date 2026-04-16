@@ -85,12 +85,12 @@ export default function Hero() {
   }, [done]);
 
   return (
-    <section className="flex-1 flex flex-col items-center justify-center">
-      <div className="w-full max-w-3xl mx-auto px-6">
+    <section className="relative flex-1 flex flex-col items-center justify-center">
+      <div className="w-full max-w-4xl mx-auto px-6">
 
-        <div className="font-mono text-sm sm:text-base leading-loose space-y-1">
+        <div className="font-mono leading-relaxed space-y-3">
           {completedLines.map((line, i) => (
-            <p key={i}>
+            <p key={i} className={i === 0 ? 'text-2xl sm:text-3xl md:text-4xl' : 'text-base sm:text-lg md:text-xl'}>
               {i === 0 ? (
                 <GlitchText>
                   <TerminalLine text={line} />
@@ -102,7 +102,7 @@ export default function Hero() {
           ))}
 
           {lineIdx < lines.current.length && (
-            <p>
+            <p className={lineIdx === 0 ? 'text-2xl sm:text-3xl md:text-4xl' : 'text-base sm:text-lg md:text-xl'}>
               <TerminalLine text={partial} />
               <span className="text-terminal-accent animate-blink" aria-hidden>
                 █
@@ -146,7 +146,25 @@ export default function Hero() {
           </a>
         </div>
 
+        {showCTA && (
+          <p className="font-mono text-xs text-terminal-muted mt-6 animate-pulse">
+            ▶ disponible pour alternance — septembre 2026
+          </p>
+        )}
+
       </div>
+
+      {showCTA && (
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
+          <motion.div
+            animate={{ y: [0, 8, 0] }}
+            transition={{ duration: 1.5, repeat: Infinity }}
+            className="font-mono text-xs text-terminal-muted"
+          >
+            scroll ↓
+          </motion.div>
+        </div>
+      )}
     </section>
   );
 }
