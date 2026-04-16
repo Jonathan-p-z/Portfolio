@@ -5,6 +5,7 @@ import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import Navbar from '@/components/Navbar';
+import MouseTracker from '@/components/MouseTracker';
 import '../globals.css';
 
 const jetbrainsMono = JetBrains_Mono({
@@ -31,6 +32,23 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: t('title'),
     description: t('description'),
+    icons: {
+      icon: '/avatar.png',
+      apple: '/avatar.png',
+    },
+    openGraph: {
+      title: 'Jonathan Perez — Yaiito',
+      description: 'Étudiant Cybersécurité — SOC / Analyste Sécurité — Aix-Marseille-Provence',
+      url: 'https://yaiito.fr',
+      siteName: 'yaiito.fr',
+      locale: 'fr_FR',
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary',
+      title: 'Jonathan Perez — Yaiito',
+      description: 'Étudiant Cybersécurité — SOC / Analyste Sécurité — Aix-Marseille-Provence',
+    },
   };
 }
 
@@ -53,6 +71,7 @@ export default async function LocaleLayout({ children, params }: Props) {
     <html lang={locale}>
       <body className={`${jetbrainsMono.variable} ${inter.variable} bg-bg text-text`}>
         <NextIntlClientProvider messages={messages}>
+          <MouseTracker />
           <Navbar />
           <main className="pt-16 min-h-[calc(100vh-4rem)] flex flex-col">
             {children}
