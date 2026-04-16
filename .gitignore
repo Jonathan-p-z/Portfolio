@@ -43,6 +43,9 @@ yarn-error.log*
 .vercel
 .turbo
 
+# ─── Rust / WASM ──────────────────────────────────────────────────────────────
+wasm-tools/target/
+
 # ─── CV à la racine (copie de travail — la version publique est dans public/) ─
 CV_Jonathan_Perez_Likedin.pdf
 
