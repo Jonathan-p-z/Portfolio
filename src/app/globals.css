@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --terminal-bg:      #0d1117;
+    --terminal-bg:      #080b10;
     --terminal-surface: #161b22;
     --terminal-border:  #30363d;
     --terminal-text:    #c9d1d9;
@@ -27,9 +27,31 @@
 
   body {
     font-family: var(--font-sans), Inter, system-ui, sans-serif;
-    background-color: var(--terminal-bg);
+    background-color: #080b10;
+    background-image:
+      radial-gradient(ellipse 80% 50% at 50% -20%, rgba(57, 211, 83, 0.04), transparent),
+      radial-gradient(ellipse 60% 40% at 80% 120%, rgba(57, 211, 83, 0.02), transparent);
     color: var(--terminal-text);
     min-height: 100dvh;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background: radial-gradient(
+      400px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+      rgba(57, 211, 83, 0.03),
+      transparent 80%
+    );
+  }
+
+  main,
+  footer {
+    position: relative;
+    z-index: 2;
   }
 
   /* Scrollbar */

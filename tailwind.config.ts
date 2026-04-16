@@ -13,7 +13,7 @@ const config: Config = {
         bg:   'var(--terminal-bg)',
         text: 'var(--terminal-text)',
         terminal: {
-          bg:      '#0d1117',
+          bg:      '#080b10',
           surface: '#161b22',
           border:  '#30363d',
           text:    '#c9d1d9',
