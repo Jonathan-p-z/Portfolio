@@ -37,10 +37,11 @@ function PlatformCard({ name, url, label }: { name: string; url: string; label: 
       className="
         relative overflow-hidden
         flex flex-col gap-4
-        border border-terminal-border
+        border border-terminal-accent/20
         bg-terminal-surface/40
-        p-5 rounded-sm
+        p-8 rounded-sm
         hover:border-terminal-accent/40
+        hover:[background:linear-gradient(135deg,rgba(57,211,83,0.03),transparent)]
         transition-colors
       "
       onMouseEnter={handleMouseEnter}
@@ -86,7 +87,7 @@ export default function CTF() {
   return (
     <motion.section
       id="ctf"
-      className="scroll-mt-16 px-6 py-20 max-w-5xl mx-auto w-full"
+      className="scroll-mt-16 px-6 py-32 max-w-6xl mx-auto w-full"
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
